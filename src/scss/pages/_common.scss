@@ -204,7 +204,7 @@
     letter-spacing: 0.1em;
 
     @media (max-width: 767px){
-      font-size: 4.4rem;
+      font-size: 4rem;
       -webkit-text-stroke: 0.15rem #000;
       text-stroke: 0.15rem #000;
       line-height: 1.4;
@@ -306,10 +306,11 @@
     background: #E8DFC9;
     border-bottom: 2px solid #000;
     line-height: 1.5;
-    height: 12.5rem;
+    height: 20rem;
+
     @media (max-width: 767px){
       font-size: 3.2rem;
-      height: 13rem;
+      height: 22rem;
     }
   }
   &__card-box{

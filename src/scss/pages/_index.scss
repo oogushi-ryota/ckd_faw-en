@@ -49,7 +49,7 @@
 
       @media (max-width: 767px){
         width: 29.5rem;
-        padding-top: 30rem;
+        padding-top: 20rem;
         margin-left: auto;
         margin-right: 2.15rem;
       }
@@ -64,7 +64,7 @@
       @media (max-width: 767px){
         width: 80rem;
         left: -26rem;
-        top: 36.3rem;
+        top: 32rem;
       }
     }
 
@@ -98,10 +98,10 @@
       height: calc(100 * (100vw / 1920));
       background: #000;
       color: #fff;
-      font-size: calc(24 * (100vw / 1920));
+      font-size: calc(20 * (100vw / 1920));
       font-weight: bold;
       letter-spacing: 0.01em;
-      line-height: 1.458;
+      line-height: 1.2;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -110,9 +110,9 @@
       position: relative;
       
       @media (max-width: 767px){
-        width: 12.6rem;
+        width: 14rem;
         height: 10.4rem;
-        font-size: 2.4rem;
+        font-size: 1.8rem;
         border: none;
       }
 
@@ -414,7 +414,7 @@
       position: relative;
 
       @media (max-width: 767px){
-        font-size: 3.6rem;
+        font-size: 2.8rem;
       }
 
       // タイトルの下線
@@ -436,11 +436,11 @@
         height: 4.7rem;
         background: url(../images/exmple_ttl_obj_01.svg) no-repeat center center / contain;
         position: absolute;
-        left: 9rem;
+        left: 3rem;
         top: -2.7rem;
 
         @media (max-width: 767px) {
-          left: 6rem;
+          left: 0;
           top: -3.7rem;
         }
       }
@@ -467,7 +467,8 @@
           top: -1.9rem;
 
           @media (max-width: 767px){
-            right: -4.7rem;
+            width: 4rem;
+            right: -3.4rem;
             top: -3rem;
           }
         }
@@ -495,18 +496,18 @@
         position: relative;
 
         @media (max-width: 767px) {
-          font-size: 4rem;
+          font-size: 3.2rem;
           margin-top: 1rem;
         }
 
         &::before{
           content: "";
-          width: 97%;
+          width: 100%;
           height: 0.2rem;
           background: #000000;
           display: inline-block;
           position: absolute;
-          bottom: -1.4rem;
+          bottom: -.8rem;
           left: 0;
           @media (max-width: 767px){
           }
@@ -517,6 +518,8 @@
     &__list{
       display: grid;
       grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      gap: 2rem;
       margin-top: 5.6rem;
 
       @media (max-width: 767px){
@@ -525,9 +528,9 @@
     }
 
     &__list-item {
-      font-size: 2.4rem;
+      font-size: 2rem;
       letter-spacing: .02em;
-      line-height: 2;
+      line-height: 1.2;
       padding-left: 2rem;
       position: relative;
 
@@ -547,6 +550,12 @@
         transform: translateY(-50%);
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
+      }
+
+      &:not(:first-child) {
+        @media (max-width: 767px) {
+          margin-top: 2.4rem;
+        }
       }
     }
 
@@ -666,12 +675,15 @@
       padding: 0;
     }
   }
+
   .feature{
     background: #FFC793;
     padding: 12rem 0 9rem;
+
     @media (max-width: 767px){
       margin-top: 14rem 0 14rems;
     }
+    
     &__title{
       font-size: 5.2rem;
       text-align: center;
@@ -680,43 +692,47 @@
       color: #fff;
       -webkit-text-stroke: 0.2rem #000;
       text-stroke: 0.2rem #000;
+
       @media (max-width: 767px){
         font-size: 5rem;
       }
     }
+
     &__lead{
-      font-size: 2.6rem;
+      font-size: 2.4rem;
       text-align: center;
       line-height: 1.53846;
       margin-top: 3.8rem;
       letter-spacing: 0.02em;
       font-weight: 500;
+
       @media (max-width: 767px){
         font-size: 2.4rem;
         margin-top: 6.6rem;
       }
     }
+
     &__list{
       margin-top: 10rem;
+
       @media (max-width: 767px){
         margin-top: 9rem;
       }
     }
+
     &__link-btn-wrap{
       width: 43rem;
       height: 9.6rem;
       margin: 8rem auto 0;
-      @media (max-width: 767px){
-      }
     }
+
     &__link-btn{
       font-size: 3rem;
       font-weight: bold;
       display: flex;
       align-items: center;
-      padding: 0 0 0 8.9rem;
-      @media (max-width: 767px){
-      }
+      padding: 0 0 0 3.2rem;
+
       &.-arrow{
         &:after{
           content: "";
@@ -736,6 +752,7 @@
       }
     }
   }
+
   .link-section{
     padding: 13.2rem 0 13.1rem;
 
@@ -758,6 +775,7 @@
       margin: 0 1.34rem;
 
       @media (max-width: 767px){
+        height: 28rem;
         margin: 0 auto 2.5rem;
       }
     }
@@ -778,10 +796,10 @@
 
     &__banner-ttl{
       font-size: 2.8rem;
-      letter-spacing: -0.06em;
+      letter-spacing: 0em;
+      line-height: 1.2;
 
       @media (max-width: 767px){
-        font-size: 3.2rem;
         line-height: 120%;
       }
     }
@@ -854,6 +872,7 @@
         }
       }
     }
+
     &__link-btn{
       width: 30rem;
       height: 12.6rem;
@@ -869,8 +888,7 @@
         font-size: 2.8rem;
         font-weight: 900;
         letter-spacing: 0.06em;
-        @media (max-width: 767px){
-        }
+        text-align: center;
       }
 
       &:nth-of-type(n+3) {

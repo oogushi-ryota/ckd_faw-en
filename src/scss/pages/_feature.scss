@@ -6,10 +6,10 @@
 
       a{
         display: block;
-        width: 39.1rem;
+        width: 39.4rem;
         padding: 1.7rem 0 1.5rem;
         text-align: center;
-        font-size: 2.4rem;
+        font-size: 2rem;
         font-weight: bold;
         letter-spacing: 0.06em;
         border: 2px solid #000;
@@ -294,11 +294,10 @@
       margin: 7.2rem auto 0;
       width: 47.7rem;
       height: 9.6rem;
-      @media (max-width: 767px){
-      }
     }
+
     &__link-btn{
-      font-size: 3rem;
+      font-size: 2.8rem;
       font-weight: bold;
       letter-spacing: 0.06em;
       display: flex;
