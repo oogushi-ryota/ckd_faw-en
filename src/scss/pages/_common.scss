@@ -116,10 +116,12 @@
   left: 0;
   transition-duration: 0.3s;
   border: 2px solid #000;
+
    &:hover{
     transform: translateY(0.6rem) translateX(0.6rem);
     background: #000;
     color: #fff;
+
     * {
       color: #fff;
      }
@@ -128,6 +130,7 @@
    &:hover + .common__link-btn-bg{
     background: unset;
    }
+
    &.-arrow{
     &:hover{
       &::after{
@@ -242,6 +245,7 @@
   font-size: 3rem;
   display: flex;
   align-items: center;
+
   &::before{
     content: "";
     display: inline-block;
@@ -250,8 +254,10 @@
     background: #FFA048;
     margin-right: 1.4rem;
   }
+
   @media (max-width: 767px){
     font-size: 3.2rem;
+
     &::before{
       content: "";
       width: 0.6rem;
@@ -272,30 +278,37 @@
   // ※リストのマージンはページごとに
   &__list{
     display: flex;
+
     @media (max-width: 767px){
       display: block;
     }
+
     li{
       &:last-of-type{
         border-right: 2px solid #000;
       }
+
       @media (max-width: 767px){
         border: 2px solid #000;
+
         &:not(:first-of-type){
           margin-top: 1.78rem;
         }
       }
     }
   }
+
   &__card{
     width: 33.3333%;
     border-left: 2px solid #000;
     border-top: 2px solid #000;
     border-bottom: 2px solid #000;
+
     @media (max-width: 767px){
       width: 100%;
     }
   }
+
   &__card-title{
     font-size: 2.4rem;
     font-weight: bold;
@@ -313,23 +326,28 @@
       height: 22rem;
     }
   }
+
   &__card-box{
     padding: 3rem 2rem 2.2rem;
+
     @media (max-width: 767px){
       display: flex;
       flex-direction: column-reverse;
       padding: 1.6rem 2rem 2.2rem;
     }
   }
+
   &__card-text{
     font-size: 2rem;
     font-weight: 400;
     line-height: 1.45;
+
     @media (max-width: 767px){
       font-size: 2.4rem;
       margin-top: 2.2rem;
     }
   }
+
   &__card-image{
     margin-top: 4.5rem;
   }
@@ -343,49 +361,61 @@
   &__list{
     display: flex;
     justify-content: space-between;
+
     @media (max-width: 767px){
       display: block;
     }
   }
   &__item{
     position: relative;
+
     @media (max-width: 767px){
       width: 57rem;
       margin: 0 auto 6.6rem;
     }
+
     &:hover{
         .common-feature__card{
           background: #000;
           border: 3px solid #fff;
+
           @media (max-width: 1024px){
             border: 3px solid #000;
           }
         }
+
         img{
           opacity: 0;
+
           @media (max-width: 1024px){
             opacity: 1;
           }
         }
+
         .common-feature__card-lead{
           transform: translateY(-12rem) scale(1.15);
           color: #fff;
+
           @media (max-width: 1024px){
             transform: unset;
           }
         }
+
         .common-feature__card-floating-text{
           border: 3px solid #fff;
         }
+
         .common-feature__card-title{
           @media (max-width: 1024px){
             color: #fff;
           }
         }
+
         &::after{
           opacity: 0;
         }
     }
+
     &::after{
       content: "";
       width: 100%;
@@ -400,6 +430,7 @@
       }
     }
   }
+
   &__card{
     background: #fff;
     position: relative;
@@ -409,12 +440,14 @@
     min-height: 36.6rem;
     padding: 5.8rem 0 2.5rem;
     transition-duration: 0.3s;
+
     @media (max-width: 767px){
       width: 100%;
       display: flex;
       align-items: center;
     }
   }
+
   &__card-floating-text{
     transition-duration: 0.3s;
     position: absolute;
@@ -437,10 +470,12 @@
     height: 8rem;
     justify-content: center;
     letter-spacing: 0.03em;
+
     @media (max-width: 767px){
       top: -3.7rem;
       height: 6.4rem;
     }
+
     &--l{
       font-size: 6.2rem;
       font-family: inherit;
@@ -449,34 +484,61 @@
       letter-spacing: 0;
       margin-left: .95rem;
       padding-bottom: 0.6rem;
+
       @media (max-width: 767px){
         font-size: 5rem;
       }
     }
   }
+
   &__text-blk{
     @media (max-width: 767px){
-      width: 47%;
+      width: 70%;
       display: flex;
       justify-content: center;
       flex-direction: column;
     }
   }
+
   &__card-title{
     font-size: 4rem;
     text-align: center;
     letter-spacing: 0.07em;
-    @media (max-width: 767px){
-    }
   }
+
   &__card-img{
     width: 21.3rem;
+    min-height: 13rem;
     margin: 2rem auto 0;
     transition-duration: 0.3s;
+
     @media (max-width: 767px){
       width: 13.9rem;
     }
+
+    &.-img01 {
+      width: 6.4rem;
+
+      @media (max-width: 767px) {
+        width: 10rem;
+      }
+    }
+
+    &.-img02 {
+      width: 24rem;
+
+      @media (max-width: 767px) {
+        width: 28rem;
+      }
+    }
+
+    &.-img03 {
+      @media (max-width: 767px) {
+        width: 28rem;
+      }
+    }
   }
+
   &__card-lead{
     font-size: 2.4rem;
     line-height: 1.5;
